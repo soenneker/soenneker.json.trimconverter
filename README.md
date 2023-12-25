@@ -8,5 +8,5 @@
 ## Installation
 
 ```
-Install-Package Soenneker.Json.TrimConverter
+dotnet add package Soenneker.Json.TrimConverter
 ```
