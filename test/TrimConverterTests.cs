@@ -10,7 +10,7 @@ public class TrimConverterTests
     {
         var testClass = new TestClass { Test = "  blah  " };
 
-        var result = System.Text.Json.JsonSerializer.Serialize(testClass);
+        string result = System.Text.Json.JsonSerializer.Serialize(testClass);
         result.Should().NotBeNull();
     }
 }
