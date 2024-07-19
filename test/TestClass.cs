@@ -2,6 +2,6 @@
 
 public class TestClass
 {
-    [System.Text.Json.Serialization.JsonConverter(typeof(TrimJsonConverter))]
+    [TrimValue]
     public string Test { get; set; }
 }
