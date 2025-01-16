@@ -3,5 +3,5 @@
 public class TestClass
 {
     [TrimValue]
-    public string Test { get; set; }
+    public string Test { get; set; } = null!;
 }
