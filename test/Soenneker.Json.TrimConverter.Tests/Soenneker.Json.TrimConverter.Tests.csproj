@@ -16,7 +16,7 @@
     <PackageReference Include="xUnit.v3" Version="3.2.2" /></ItemGroup>
 
     <ItemGroup>
-        <ProjectReference Include="..\..\src\Soenneker.Json.TrimConverter.csproj" />
+        <ProjectReference Include="..\..\src\Soenneker.Json.TrimConverter\Soenneker.Json.TrimConverter.csproj" />
     </ItemGroup>
 
     <ItemGroup>
