@@ -10,6 +10,15 @@ public class TrimConverterTests
         var testClass = new TestClass { Test = "  blah  " };
 
         string result = System.Text.Json.JsonSerializer.Serialize(testClass);
+        result.Should().Be("{\"Test\":\"  blah  \"}");
+    }
+
+    [Test]
+    public void Should_trim_during_deserialization()
+    {
+        TestClass? result = System.Text.Json.JsonSerializer.Deserialize<TestClass>("{\"Test\":\"  blah  \"}");
+
         result.Should().NotBeNull();
+        result!.Test.Should().Be("blah");
     }
 }
